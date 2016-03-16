@@ -2,7 +2,10 @@
   "name": "antd-demo",
   "version": "1.0.0",
   "entry": {
-    "index": "./src/entry/index.jsx"
+    "ant-style": "./src/entry/ant-style.js",
+    "typing": "./src/entry/typing.jsx",
+    "index": "./src/entry/index.jsx",
+    "login": "./src/entry/login.jsx"
   },
   "dependencies": {
     "antd": "0.12.x",
@@ -25,6 +28,9 @@
   "pre-commit": [
     "lint"
   ],
+  "theme": {
+    "primary-color": "#60BE29"
+  },
   "scripts": {
     "start": "npm run dev",
     "dev": "dora -p 8001 --plugins webpack,proxy,hmr,livereload?enableJs=false",
